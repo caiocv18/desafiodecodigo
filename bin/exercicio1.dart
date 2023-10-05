@@ -1,11 +1,4 @@
-import 'dart:io';
-
-void main() {
-
-  double saldoAtual = double.parse(stdin.readLineSync()!);
-  double valorDeposito = double.parse(stdin.readLineSync()!);
-  double valorRetirada = double.parse(stdin.readLineSync()!);
-
+String resolucao({required double saldoAtual, required double valorDeposito, required double valorRetirada}) {
   double saldoAtualizado = saldoAtual + (valorDeposito - valorRetirada);
-  print('Saldo atualizado na conta: ${saldoAtualizado.toStringAsFixed(1)}');
+  return 'Saldo atualizado na conta: ${saldoAtualizado.toStringAsFixed(1)}';
 }
